@@ -1,0 +1,158 @@
+﻿//*
+empty space I can 
+	type anything in here
+*//
+//declare space		space's name	space's referenced
+//set space called AnimalSpace
+//anything that uses namethen() has to have ':' before the name
+space: AnimalSpace()//() not required
+{//1 a
+	//template class, must be inheritied to be used
+	template: Animal
+	{//2 a
+		//if the thing doesnt use (), then it doesnt need ':'
+		properties{//3 a
+			String name
+			
+		}//2 a
+		methods{//3 b
+			//these methods are required
+			func: void Yell(int pitch, int duration)
+			int growUp
+
+			//declaring a function null makes it not required
+			int getLegCount: null
+
+			//*
+			space: ThisIsFake(){//4 a
+				static print}//3 b
+			*//
+		}//2 a
+	}//1 a
+
+}//0 a
+
+
+//Container to group a bunch of related code
+//set space called ContainerSpace, using space AniamlSpace and IO.console
+space: ContainerSpace(AnimalSpace,IO.console)
+{
+
+	//initilizing a varible
+	//set string called logMyLife as a string
+	string logMyLife: "This would be a logger but meh"
+
+	func: void imJustAFunction()
+    {
+		throw notImplementedException()
+	}
+
+	func: void imAFunctionWithParams(int param1, bool paramalamas = false)
+	{
+		throw notImplementedException()
+	}
+
+	//Class declaration
+	//set class called AdoptionCenter
+	class: AdoptionCenter{
+		//class properities definitions
+		properties{
+
+			//by default properties are public
+			String location
+			private Zoo _zooAnimals: Zoo()//private zoo animal property
+			Zoo zooAnimals: 
+				get{
+					//optional get and set method calls
+					return _zooAnimals
+				}
+				set{
+					_zooAnimals = value
+				}
+
+			private int animalDeaths: 0
+		}
+		//class constructor definitions
+		constructor
+		{
+
+			//happens before doing an constructors
+			//cannot take any parameters
+			//method called before all other constructors
+			func: init{
+				time curTime: time.now()//not implemented
+			}
+
+			//happens after doing all constructors
+			//cannot take parameters
+			//method called after all other constructors
+			func: final{
+				IO.writeline(logMyLife)//not implemented
+			}
+
+			//AUTO keyword links matching property and sets this.location = parameter location
+			//constructor matching (string,int) or just (string)
+			func: construct(AUTO string location, int capacity=null)
+			{
+				//without AUTO you have to do
+				this.capacity = capacity
+			}
+
+			//constructor matching (int,int)
+			func: construct( int width, int length)
+			{
+								//cast double to int
+				this.capacity = int: (2+(width-1)*(length-1)/20)
+			}
+	
+		}
+		methods{
+			func: void printAnimalCount{
+				console.PrintLn("500 ducks")
+			}
+
+			func: double getTotalLegCount()
+			{
+				return = 0
+				foreach (Animal anim in _zooAnimals)
+					return += anim.getLegCount()
+				return
+			}
+		}
+	}
+	//Inheriting a List of Animal
+	class: Zoo (List<Animal>)
+	{
+		//might remove this functionality
+		mycustomsection//name can be anything
+		{
+			//idk what this space would be used for
+		}
+
+
+		properties{//this is where all the objects varibles go
+			private const int baseline : 2
+			private const bool multiplier : true
+			public const int multiplyAmount : 3
+			private static globalCounter: 0
+			public int myNumber;
+		}
+		constructor//this is where all the object constructors go
+		{
+			func: construct(int miniumValue = multiplier ? baseline * multiplyAmount : baseline)
+			{
+				//do cool stuff
+			}
+			func: construct(int myFavNumber = globalCounter)
+			{
+				globalCounter++;
+			}
+
+			func: construct(AUTO int myNumber = multiplier ? baseline * multiplyAmount : baseline)
+			{
+				Console.WriteLine("this is my number: " + this.myNumber);
+				return //cool stuff
+			  }
+		}
+	}
+}

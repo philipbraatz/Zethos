@@ -1,0 +1,292 @@
+﻿
+SortLevels: space
+SortLevels: :
+SortLevels: AnimalSpace
+SortLevels: (
+SortLevels: )\n
+SortLevels: {\n
+SortLevels: template
+SortLevels: :
+SortLevels: Animal
+SortLevels: ;\n
+SortLevels: {\n
+SortLevels: properties
+SortLevels: {\n
+SortLevels: //3 a;\n
+SortLevels: String name
+SortLevels: ;\n
+SortLevels: ;\n
+SortLevels: }\n
+SortLevels: //2 a;\n
+SortLevels: methods
+SortLevels: {\n
+SortLevels: func
+SortLevels: :
+SortLevels: void Yell
+SortLevels: (
+SortLevels: int pitch
+SortLevels: ,
+SortLevels: int duration
+SortLevels: )
+SortLevels: ;\n
+SortLevels: int growUp
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: int getLegCount
+SortLevels: :
+SortLevels: null
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: }\n
+SortLevels: //2 a;\n
+SortLevels: }\n
+SortLevels: //1 a;\n
+SortLevels: ;\n
+SortLevels: }\n
+SortLevels: //0 a;\n
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: space
+SortLevels: :
+SortLevels: ContainerSpace
+SortLevels: (
+SortLevels: AnimalSpace
+SortLevels: ,
+SortLevels: IO.console
+SortLevels: )
+SortLevels: ;\n
+SortLevels: {
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: string logMyLife
+SortLevels: :
+SortLevels: "This would be a logger but meh"
+SortLevels: ;\n
+SortLevels: ;\n
+SortLevels: func
+SortLevels: :
+SortLevels: void imJustAFunction
+SortLevels: (
+SortLevels: )
+SortLevels: ;\n
+SortLevels: {
+SortLevels: ;\n
+SortLevels: throw notImplementedException
+SortLevels: (
+SortLevels: )
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: ;\n
+SortLevels: func
+SortLevels: :
+SortLevels: void imAFunctionWithParams
+SortLevels: (
+SortLevels: int param1
+SortLevels: ,
+SortLevels: bool paramalamas
+SortLevels: =
+SortLevels: false
+SortLevels: )
+SortLevels: ;\n
+SortLevels: {
+SortLevels: ;\n
+SortLevels: throw notImplementedException
+SortLevels: (
+SortLevels: )
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: class
+SortLevels: :
+SortLevels: AdoptionCenter
+SortLevels: {
+SortLevels: ;\n\n
+SortLevels: properties
+SortLevels: {
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: String location
+SortLevels: ;\n
+SortLevels: private Zoo _zooAnimals
+SortLevels: :
+SortLevels: Zoo
+SortLevels: (
+SortLevels: )\n
+SortLevels: Zoo zooAnimals
+SortLevels: :
+SortLevels: ;\n
+SortLevels: get
+SortLevels: {
+SortLevels: ;\n\n
+SortLevels: return _zooAnimals
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: set
+SortLevels: {
+SortLevels: ;\n
+SortLevels: _zooAnimals
+SortLevels: =
+SortLevels: value
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: ;\n
+SortLevels: private int animalDeaths
+SortLevels: :
+SortLevels: 0
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n\n
+SortLevels: constructor
+SortLevels: ;\n
+SortLevels: {
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: func
+SortLevels: :
+SortLevels: init
+SortLevels: {
+SortLevels: ;\n
+SortLevels: time curTime
+SortLevels: :
+SortLevels: time.now
+SortLevels: (
+SortLevels: )\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: func
+SortLevels: :
+SortLevels: final
+SortLevels: {
+SortLevels: ;\n
+SortLevels: IO.writeline
+SortLevels: (
+SortLevels: logMyLife
+SortLevels: )\n
+SortLevels: //not implemented;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: func
+SortLevels: :
+SortLevels: construct
+SortLevels: (
+SortLevels: AUTO string location
+SortLevels: ,
+SortLevels: int capacity
+SortLevels: =
+SortLevels: null
+SortLevels: )
+SortLevels: ;\n
+SortLevels: {
+SortLevels: ;\n\n
+SortLevels: this.capacity
+SortLevels: =
+SortLevels: capacity
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: ;\n\n
+SortLevels: func
+SortLevels: :
+SortLevels: construct
+SortLevels: (
+SortLevels: int width
+SortLevels: ,
+SortLevels: int length
+SortLevels: )
+SortLevels: ;\n
+SortLevels: {
+SortLevels: ;\n\n
+SortLevels: //cast double to int;\n
+SortLevels: this.capacity
+SortLevels: =
+SortLevels: int
+SortLevels: :
+SortLevels: (
+SortLevels: 2
+SortLevels: +
+SortLevels: (
+SortLevels: width
+SortLevels: -
+SortLevels: 1
+SortLevels: )
+SortLevels: *
+SortLevels: (
+SortLevels: length
+SortLevels: -
+SortLevels: 1
+SortLevels: )
+SortLevels: /20
+SortLevels: )
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: methods
+SortLevels: {
+SortLevels: ;\n
+SortLevels: func
+SortLevels: :
+SortLevels: void printAnimalCount
+SortLevels: {
+SortLevels: ;\n
+SortLevels: console.PrintLn
+SortLevels: (
+SortLevels: "500 ducks"
+SortLevels: )
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: ;\n
+SortLevels: func
+SortLevels: :
+SortLevels: double getTotalLegCount
+SortLevels: (
+SortLevels: )
+SortLevels: ;\n
+SortLevels: {
+SortLevels: ;\n
+SortLevels: return
+SortLevels: =
+SortLevels: 0
+SortLevels: ;\n
+SortLevels: foreach
+SortLevels: (
+SortLevels: Animal anim in _zooAnimals
+SortLevels: )
+SortLevels: ;\n
+SortLevels: return
+SortLevels: +
+SortLevels: =
+SortLevels: anim.getLegCount
+SortLevels: (
+SortLevels: )
+SortLevels: ;\n
+SortLevels: return
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n\n
+SortLevels: class
+SortLevels: :
+SortLevels: Zoo
+SortLevels: (
+SortLevels: List<Animal>
+SortLevels: )
+SortLevels: ;\n
+SortLevels: {
+SortLevels: ;\n
+SortLevels: ;\n
+SortLevels: }
+SortLevels: ;\n
+SortLevels: }

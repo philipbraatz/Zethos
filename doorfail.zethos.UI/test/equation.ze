@@ -1,0 +1,8 @@
+﻿space: Equations()
+{
+    int origon
+    int nien: 77
+    bool banana: true
+    origon = nien + 2
+    origon = banana ? origon | -1
+}

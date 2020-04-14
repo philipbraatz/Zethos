@@ -1,0 +1,24 @@
+﻿[$RootKey$\Packages\{ca520407-ef56-4806-b5bb-eac6f903501f}]
+@="doorfail.zethos.extension Package"
+"InprocServer32"="$PackageFolder$\doorfail.zethos.extension.dll"
+"CompanyName"="Doorfail"
+"ProductName"="Zethos Language"
+"ProductVersion"="1.0"
+
+[$RootKey$\Packages\{ca520407-ef56-4806-b5bb-eac6f903501f}\SatelliteDll]
+"DllName"="doorfail.zethos.extensionUI.dll"
+"Path"="$PackageFolder$"
+
+[$RootKey$\Menus]
+"{ca520407-ef56-4806-b5bb-eac6f903501f}"=", 1000, 1"
+
+[$RootKey$\InstalledProducts\doorfail.zethos.extension]
+@="#100"
+"Package"="{ca520407-ef56-4806-b5bb-eac6f903501f}"
+"ProductDetails"="#102"
+"LogoID"="#400"
+"PID"="1.0"
+"UseInterface"=dword:00000000
+
+
+

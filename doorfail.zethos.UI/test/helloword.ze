@@ -1,0 +1,15 @@
+﻿//the space we are working in
+space: basicExample(IO.console)
+{
+	//function with no parameters
+	func: void printHelloWorld
+	{
+		//declaring myString with a value of hello
+		string myString: "Hello"
+		myString += " World"
+
+		console.PrintLn(myString)
+	}
+}
+
+main: basicExample.printHelloWorld

@@ -1,0 +1,7 @@
+﻿; doorfail.zethos.extension.def : Declares the module parameters.
+
+LIBRARY      "doorfail.zethos.extension.DLL"
+
+EXPORTS
+	DllCanUnloadNow            PRIVATE
+	DllGetClassObject          PRIVATE
